@@ -13,6 +13,9 @@ import javax.swing.JFileChooser;
 
 public class Drera {
     public static void main(String[] args) throws FileNotFoundException, IOException, ScriptException {
+        MainWindow mw = new MainWindow();
+        mw.setVisible(true);
+        
         Interpreter interpreter = new Interpreter();
         
         String fileName;
@@ -30,5 +33,7 @@ public class Drera {
         while ((line = reader.readLine()) != null) {
             interpreter.parse(line);
         }
+        
+        System.out.println("\nFim da execução do script.");
     }
 }
