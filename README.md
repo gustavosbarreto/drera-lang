@@ -1,6 +1,6 @@
 # drera-lang
 
-Drera lang é uma linguagem para o ensino de lógica de programação com um sintaxe em português.
+Drera lang é uma linguagem para o ensino de lógica de programação com uma sintaxe em português.
 
 ## Características
 
