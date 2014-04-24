@@ -1,0 +1,11 @@
+imprimir Qual é o seu nome?
+ler nome
+
+imprimir Olá $nome. Qual é a sua idade?
+ler idade
+
+se idade >= 18
+	imprimir Você é maior de idade
+senao
+	imprimir Você é menor de idade
+fim
