@@ -73,9 +73,9 @@ public class Interpreter {
 
             return;
         }
-            
-        if (line.startsWith("var")) {
-            Matcher matcher = Pattern.compile("var\\s(.*)\\s?=\\s?(.*)").matcher(line);
+        
+        if (line.matches("^(.*)\\s=\\s(.*)$")) {
+            Matcher matcher = Pattern.compile("^(.*)\\s=\\s(.*)$").matcher(line);
             matcher.find();
             String name = matcher.group(1).trim();
             String value = this.engine.eval(matcher.group(2)).toString();
